@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements */
+    p::first-letter {
+      color: red;
+    }
+    p::first-line {
+      font-weight: 800;
+    }
+    p::selection {
+      background-color: darkblue;
+    }
+    p::after {
+      content: attr(class);
+      font-size: larger;
+      color: orange;
+    }
+  </style>
+</head>
+<body>
+  <p class="x">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt praesentium et similique eaque nesciunt error pariatur repellat, sequi, neque omnis numquam atque facilis labore ut! Aliquam aperiam delectus rerum ratione?
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, neque odio. Distinctio earum nesciunt odit veniam deserunt corporis. Laboriosam error facere quo voluptas aliquam cumque sunt ipsum perferendis adipisci quod.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque consequatur neque delectus, at itaque exercitationem! Earum, aspernatur, ducimus maiores ea magni, praesentium eveniet aliquid iure quam ipsa voluptatibus optio. Reiciendis.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro fuga tenetur fugit sit nisi? Labore non omnis quibusdam, officiis itaque similique amet ut animi fugiat voluptatem, dolorem, ullam exercitationem sint.
+  </p>
+  <h2>h2 after p</h2>
+  <h2>h2 after h2</h2>
+</body>
+</html>

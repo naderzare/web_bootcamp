@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors */
+    button[onclick="f1()"] {
+      background-color: red;
+    }
+    a[href="a2"] {
+      background-color: red;
+    }
+    a[href*="a2"] {
+      background-color: lightblue;
+    }
+  </style>
+</head>
+<body>
+  <button onclick="f1()">button f1</button>
+  <button onclick="f2()">button f2</button>
+  <button>button</button>
+  <a href="/a1/">a1</a>
+  <a href="/a2/">a2</a>
+  <a href="/a3/">a3</a>
+</body>
+</html>

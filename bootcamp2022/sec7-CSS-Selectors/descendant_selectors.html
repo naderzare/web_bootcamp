@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Page Title</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <style>
+    /* https://developer.mozilla.org/en-US/docs/Web/CSS/Descendant_combinator */
+    p {
+      background-color: gray;
+    }
+
+    div p {
+      background-color: darkblue;
+      color: wheat;
+    }
+
+    #div2 p {
+      background-color: aqua;
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <p>p</p>
+  <div><h5>h5 in div</h5><p>p1 in div</p><p>p2 in div</p></div>
+  <p>p</p>
+  <div id="div2">
+    <p>p in div2</p>
+    <p>p in div2</p>
+  </div>
+  <div id="div2">
+    <div>
+      <p>p in div2</p>
+      <p>p in div2</p>
+    </div>
+    <div id="div2">
+      <p>p in div2</p>
+      <p>p in div2</p>
+    </div>
+  </div>
+</body>
+</html>

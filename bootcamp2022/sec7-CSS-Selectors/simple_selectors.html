@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Page Title</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <style>
+    /* 
+      https://developer.mozilla.org/en-US/docs/Web/CSS/Type_selectors 
+      https://developer.mozilla.org/en-US/docs/Web/CSS/Class_selectors
+      https://developer.mozilla.org/en-US/docs/Web/CSS/ID_selectors
+      https://developer.mozilla.org/en-US/docs/Web/CSS/Selector_list
+    */
+    p {
+      color: red;
+      background-color: black;
+    }
+
+    h2,h3 {
+      background-color: aqua;
+    }
+
+    #p1 {
+      background-color: darkmagenta;
+    }
+    * {
+      color: blue;
+    }
+    .grayback {
+      background-color: gray;
+    }
+    .greenback {
+      background-color: green;
+    }
+  </style>
+</head>
+<body>
+  <h4>h4</h4>
+  <h3>h3</h3>
+  <h2>h2</h2>
+  <div><p>P</p></div>
+  <div><p id="p1">p id="p1"</p></div>
+  <div><p id="p1">p id="p1"</p></div>
+  <div><p class="grayback">p class="grayback"</p></div>
+  <div><p class="grayback greenback">class="grayback greenback"</p></div>
+  <!-- The order of classes is not important, the order of selectors in css is important -->
+  <div><p class="greenback grayback">class="greenback grayback"</p></div>
+</body>
+</html>
