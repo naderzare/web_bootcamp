@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      width: 50px;
+      height: 50px;
+      background-color: lightcoral;
+      border: 1px solid red;
+      display: inline-block;
+    }
+    #static .mid {
+      top: 25px;
+    }
+    #relative .mid {
+      position: relative;
+      top: 25px;
+      left: 25px;
+    }
+    #absolute .mid {
+      position: absolute;
+      top: 25px;
+      left: 25px;
+      background-color: darkcyan;
+    }
+    #relative-sec-absolute-div{
+      position: relative;
+    }
+    #relative-sec-absolute-div .mid {
+      position: absolute;
+      top: 25px;
+      left: 25px;
+    }
+    #fixed .mid {
+      position: fixed;
+      top: 25px;
+      left: 100px;
+    }
+  </style>
+</head>
+<body>
+  <section id="static">
+    <h3>static</h3>
+    <div></div>
+    <div class="mid"></div>
+    <div></div>
+  </section>
+  <section id="relative">
+    <h3>relative</h3>
+    <div></div>
+    <div class="mid"></div>
+    <div></div>
+  </section>
+  <section id="absolute">
+    <h3>absolute</h3>
+    <div></div>
+    <div class="mid">absolute mid</div>
+    <div></div>
+  </section>
+  <section id="relative-sec-absolute-div">
+    <h3>relative-sec-absolute-div</h3>
+    <div></div>
+    <div class="mid">absolute mid</div>
+    <div></div>
+  </section>
+  <section id="fixed">
+    <h3>fixed</h3>
+    <div></div>
+    <div class="mid">fixed mid</div>
+    <div></div>
+  </section>
+  <div style="width: 100px; height: 1000px;background-color: black;"></div>
+</body>
+</html>
