@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* Relative EM REM VH VW % ... */
+    /* Absolute PX PT CM IN MM */
+    div {
+      width: 200px;
+      height: 200px;
+      border: 1px solid red;
+    }
+    #d1 > div {
+      width: 50%;
+      height: 50%;
+      background-color: lightblue;
+    }
+    #s1 {
+      font-size: 20px;
+    }
+    #s2 {
+      font-size: 2em; /*twice its parrent font size*/
+    }
+    #d3 > div {
+      width: 2.0em; /* twice its font size */
+      height: 2.0em;
+      background-color: red;
+      font-size: 2.0em; /* twice parent font size */
+      margin: 1em; /* same as its font size */
+    }
+    button {
+      font-size: 100px;
+      height: 1.5em; /*it will be increased by font size*/
+      border: 1px solid red;
+      border-radius: 1em; /* it will be increased by font size */
+    }
+  </style>
+</head>
+<body>
+  <div id="d1">
+    <div></div>
+  </div>
+  <div id="d2">
+    <span id="s1">test <span id="s2">test2</span> test</span>
+  </div>
+  <div id="d3"><div>test</div>test</div>
+  <div id="d4"></div>
+  <button>test test</button>
+</body>
+</html>

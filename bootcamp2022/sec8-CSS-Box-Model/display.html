@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    p {
+      width: 200px; /* is ignored because it is inline */
+      height: 200px; /* is ignored because it is inline */
+      background-color: lightblue;
+      border: 1px solid blue;
+      /* https://developer.mozilla.org/en-US/docs/Web/CSS/display */
+      display: inline;
+    }
+    div {
+      width: 200px;
+      height: 200px;
+      background-color: lightcoral;
+      border: 5px solid red;
+      display: inline-block; /* it cares to width and height */
+    }
+    #one {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+  <div id="one"></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</body>
+</html>
